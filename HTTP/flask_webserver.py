@@ -13,6 +13,12 @@ def index():
     print("Request Args:", request.args)
     print("Request Cookies:", request.cookies)
     
+    # Altri dettagli disponibili sulla richiesta
+    print("Request Remote Address:", request.remote_addr)
+    print("Request User Agent:", request.user_agent)
+    print("Request Content Type:", request.content_type)
+    print("Request Content Length:", request.content_length)
+
     # Esegui la logica della tua applicazione
     response = 'Hello, World!'
 
